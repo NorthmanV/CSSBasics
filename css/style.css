@@ -1,3 +1,7 @@
+* { /* apply for all elements */
+    padding: 0;
+    margin: 0;
+}
 h3 {
     color: green;
 }
@@ -19,9 +23,61 @@ body {
 .box-1 {
     background-color: teal;
     color: snow;
+    border: 5px greenyellow solid;
+    /* can be done for each side
     border-right: 5px greenyellow solid;
     border-left: 5px greenyellow solid;
     border-top: 5px greenyellow solid;
-    border-bottom: 5px greenyellow solid;
-
+    border-bottom: 5px greenyellow solid; */
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    padding: 20px; /* add space inside the element */
+    margin: 20px 0; /* add space outside the element, 20 - for top and bottom, 0 - for left and right */
+}
+.box-1 h4 { /* applied only for header inside this class */
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+    text-align: center;
+}
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+.categories {
+    border: 1px solid #ccc;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+}
+.categories h1 {
+    text-align: center;
+    padding: 4px;
+}
+.categories ul {
+    padding: 2px;
+    padding-left: 20px;
+    list-style: none;
+}
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: dotted 1px gray;
+    list-style-image: url("../images/check.png");
+}
+a {
+    text-decoration: none;
+    color: #555555;
+}
+a:hover {
+    color: royalblue;
+}
+a:active {
+    color: orange;
+}
+a:visited {
+    color: lightslategray;
 }
