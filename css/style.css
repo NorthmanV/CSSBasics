@@ -133,6 +133,9 @@ a:visited {
     border: 1px solid gray;
     margin-top: 30px;
     position: relative;
+    background-image: url("../images/bgimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 .p-box h4 {
     position: absolute;
@@ -143,4 +146,20 @@ a:visited {
     position: absolute;
     bottom: 10%;
     right: 50%;
+}
+.fix-me {
+    position: fixed;
+    top: 200px;
+}
+.my-list li:first-child {
+    background-color: aqua;
+}
+.my-list li:last-child {
+    background-color: lightskyblue;
+}
+.my-list li:nth-child(5) {
+    background-color: lightcoral;
+}
+.my-list li:nth-child(even) {
+    background-color: palegreen;
 }
